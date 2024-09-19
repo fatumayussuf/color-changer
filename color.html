@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>COLOR CHANGER</h1>
+    </div>
+    <div id="color-box">
+        <button id="change-color-btn">change color</button>
+
+    </div>
+    <script>
+        // Wait for the DOM content to load
+document.addEventListener("DOMContentLoaded", function() {
+    // Select the elements
+    let colorBox = document.getElementById('color-box');
+    let changeColorBtn = document.getElementById('change-color-btn');
+
+    // Function to generate a random color
+    function getRandomColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    // Add an event listener to the button
+    changeColorBtn.addEventListener('click', function() {
+        // Change the background color of the color-box
+        colorBox.style.backgroundColor = getRandomColor();
+    });
+});
+
+    </script>
+</body>
+</html>

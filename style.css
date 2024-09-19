@@ -1,0 +1,31 @@
+* {
+margin: 0%;
+padding: 0%;
+border: 0;
+font-size: 100%;
+
+}
+.container{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 340px;
+}
+#color-box{
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+     margin: 20px auto;
+
+
+}
+#change-color-btn{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
